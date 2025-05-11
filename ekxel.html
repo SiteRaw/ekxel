@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteRaw Ekxel Spreadsheet</title>
+    <link rel="stylesheet" href="ekxel.css"/>
+</head>
+<body>
+    <h1>Simple Spreadsheet</h1>
+    
+    <div class="toolbar">
+        <input type="file" id="csvFile" accept=".csv">
+        <button id="exportBtn">Export to CSV</button>
+        <button id="addColBeforeBtn">Add Column Before</button>
+        <button id="addColAfterBtn">Add Column After</button>
+        <button id="removeColBtn">Remove Column</button>
+        <button id="moveColLeftBtn">Move Column Left</button>
+        <button id="moveColRightBtn">Move Column Right</button>
+        <button id="addRowBeforeBtn">Add Row Before</button>
+        <button id="addRowAfterBtn">Add Row After</button>
+        <button id="removeRowBtn">Remove Row</button>
+        <button id="moveRowUpBtn">Move Row Up</button>
+        <button id="moveRowDownBtn">Move Row Down</button>
+    </div>
+    
+    <table id="spreadsheet">
+        <thead>
+            <tr id="headerRow"></tr>
+        </thead>
+        <tbody id="dataBody"></tbody>
+    </table>
+
+    <script type="text/javascript" src="ekxel.js"></script>
+</body>
+</html>
