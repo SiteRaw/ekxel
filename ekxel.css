@@ -1,0 +1,49 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
+.toolbar {
+	margin-bottom: 10px;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+button {
+	padding: 5px 10px;
+	cursor: pointer;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+th, td {
+	border: 1px solid #ace;
+	padding: 8px;
+	text-align: left;
+}
+th {
+	background-color: #f1faff;
+	cursor: pointer;
+	position: relative;
+}
+th:hover {
+	background-color: #fff;
+}
+th.sort-asc::after {
+	content: " ↑";
+}
+th.sort-desc::after {
+	content: " ↓";
+}
+td input {
+	width: 100%;
+	border: none;
+	padding: 5px;
+	box-sizing: border-box;
+}
+td input:focus {
+	outline: 2px solid #4CAF50;
+}
+.active-cell {
+	background-color: #e6f7ff;
+}
